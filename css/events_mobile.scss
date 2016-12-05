@@ -1,0 +1,182 @@
+@import 'styles';
+
+
+////////////////////////////////////////
+
+// Background image 'styles' for News content. This will be different for "Events" and "Action Required." //
+// These attributes take the image in the story, scale it up in the background, center it, blur and saturate //
+.events-background-image-twox {
+  height: 1136px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 640px;
+  z-index: -1;
+}
+
+.events-background-image-twox img {
+  height: 1136px;
+  width: auto;
+  filter: brightness(0.9);
+  -webkit-filter: brightness(0.9); /* Chrome, Safari, Opera */
+}
+
+
+//////////// Type Styles /////////////
+
+h2.title-white {
+  color: #FFFFFF;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  width: 384px;
+}
+
+.day-date-container {
+  display: flex;
+  margin-top: 14px;
+}
+
+.start-end-container {
+  display: flex;
+}
+
+h4.event-day,
+h4.event-date,
+h5.start-time,
+h5.end-time {
+  color: #FFFFFF;
+  float: left;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  margin: 0;
+}
+
+h4.event-day {
+  padding-right: 8px;
+  text-transform: uppercase;
+}
+
+h5.start-time {
+  padding-right: 8px;
+}
+
+//////////////////////////////////////
+
+.content-box {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  border: 0px solid transparent;
+  height: 860px;
+  margin: 40px;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: overlay;
+  position: relative;
+  width: 560px;
+  z-index: 2;
+}
+
+.events-title-background {
+  padding: 36px 40px 28px 40px;
+  width: 480px;
+}
+
+.events-title-background {
+  @include events-gradient (events-grad);
+}
+
+.event-address {
+  background: #F2F2F2;
+  border-radius: 8px 8px 0 0;
+  color: #666666;
+  margin: 40px 36px 0 40px;
+  padding: 24px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+br.address-break {
+  margin: 0;
+}
+
+.inline-map-fpo {
+  height: 270px;
+  margin: 0 40px 18px;
+  position: relative;
+}
+
+.inline-map-fpo img {
+  border: 1px solid #E06C26;
+  border-radius: 0 0 8px 8px;
+  top: 0;
+  position: absolute;
+}
+
+
+#event-share-button {
+  background-image: url(../images/share_button.svg);
+  height: 58px;
+  margin: 28px;
+  position: relative;
+  right: 36px;
+  top: -142px;
+  width: 58px;
+  float: right;
+}
+
+a.inline-link {
+  text-decoration: none;
+  color: $button-preselect-blue;
+}
+
+.story {
+  line-height: 32px;
+  margin: 0 40px 40px;
+}
+
+.resource-link {
+  background-color: $background-gray;
+  border: 0px solid transparent;
+  border-radius: 8px;height: 120px;
+  margin-bottom: 36px;
+  width: 100%;
+}
+
+.resource-link img {
+  float: left;
+  height: 74px;
+  width: auto;
+  padding: 20px;
+}
+
+p.resource-link-text {
+  float: left;
+  line-height: 120px;
+  margin: 0;
+}
+
+.switch-button {
+  height: 54px;
+}
+
+p#switch-button-text {
+  font-size: 28px;
+  float: left;
+  margin: 0;
+  line-height: 38px;
+}
+
+img#gradient {
+  margin-left: -40px;
+}
+
+img#switch {
+  margin: 0;
+  width: 80px;
+  height: 40px;
+  float: right;
+}
+
